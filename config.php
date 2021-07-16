@@ -19,7 +19,7 @@ function encabezado_pagina($titulo) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <title>$titulo</title>
     </head>
     <body>
     EOT;
@@ -29,5 +29,16 @@ function pie_pagina() {
         </body>
     </html>
     EOT;
+}
+
+function verificarInicio() {
+    session_start();
+
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.php");
+        exit;
     }
+}
+
+
 ?>

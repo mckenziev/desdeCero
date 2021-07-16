@@ -3,5 +3,9 @@
 ?>
 
 <?=encabezado_pagina('Inicio')?>
-    <h1>Hola Mundo!!!</h1>
+
+    <div>
+        <h1>Hola Mundo!!!</h1>
+    </div>
+
 <?=pie_pagina()?>

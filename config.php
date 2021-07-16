@@ -22,13 +22,6 @@ function encabezado_pagina($titulo) {
         <title>Document</title>
     </head>
     <body>
-    <ul>
-        <li><a class="active" href="#">Doctores</a></li>
-        <li><a href="#">Pacientes</a></li>
-        <li><a href="#">Consultas</a></li>
-        <li><a href="#">Medicamentos</a></li>
-        <li><a href="#">Salir</a></li>
-    </ul>
     EOT;
 }
 function pie_pagina() {
